@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+:root {
+  --main-bg-color: #353535;
+  --main-text-color: white;
+  --main-header-font: "Grenze Gotisch", cursive;
+  --main-padding: 15px;
+  --main-p-font: "Quicksand", sans-serif;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--main-header-font);
+  padding: var(--main-padding);
+  color: var(--main-text-color);
+}
+
+p {
+  font-family: var(--main-p-font);
+  padding: var(--main-padding);
+  color: var(--main-text-color);
+}
+
+img {
+  height: 350px;
+}
+
+img.outline {
+  position: relative;
+  left: 5px;
+  bottom: 5px;
+  z-index: -1;
+}
+
+img.fill {
+  position: absolute;
+}
+
+figure {
+  padding: 30px;
+}
+
+.blur {
+  width: 50vw;
+  height: auto;
+  left: auto;
+  right: auto;
+  filter: blur(2px);
+  position: absolute;
+}
+
+div {
+  width: 50vw;
+  height: 33.3vw;
+  outline: grey solid 1px;
+  position: relative;
+  left: 10px;
+  bottom: 10px;
+  z-index: -1;
+}
+
+figcaption {
+  color: var(--main-text-color);
+  font-family: var(--main-p-font);
+  z-index: 2;
+  padding-top: 10px;
+}
